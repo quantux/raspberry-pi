@@ -15,6 +15,7 @@ updatedb
 mkdir -p /usr/local/squid/etc/ssl_cert
 chown -R proxy:proxy /usr/local/squid/etc/ssl_cert
 chmod -R 700 /usr/local/squid/etc/ssl_cert
+cd /usr/local/squid/etc/ssl_cert
 
 # create ssl certificate
 openssl req -new -newkey rsa:2048 -sha256 -days 365 -nodes -x509 -extensions v3_ca -keyout home.pem -out home.pem
